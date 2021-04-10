@@ -11,6 +11,7 @@ This setup also allows me to use 1 high current output to drive the motor at low
 
 Wires are connected to the board using Deutsch DT 4 pin connectors 
 
+# Wiring
 
  Pin | Function
  ----| --------- 
@@ -19,6 +20,15 @@ Wires are connected to the board using Deutsch DT 4 pin connectors
  3   | Park Switch
  4   | Slow Input
 
+# Connection Table
+Slow Input Level | Fast Input Level | Slow Output Connection | Fast Output Connection
+---------- | ---------- | ----------- | -----------
+L | L | Ground | Not Connected
+H | L | Slow Input | Not Connected
+L | H | Ground | Not Connected
+H | H | Not Connected | Slow Input
+
+# Renderings
  ![Top](/Renders/WiperModuleTop.jpg)
 
  ![Bottom](/Renders/WiperModuleBottom.jpg)
